@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Peoples from './components/people'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="row">
+      <div className="col">
+      <div className="navbar navbar-expand-lg navbar-light bg-light">
+        CTD-The Star Wars API By: Huseyin Ozdogan
+      <hr />
+      </div>
+      <div className="col mt-3">
+         <Peoples/>
+      </div>
+
+      </div>
+
     </div>
+
+    </>
   );
 }
 
