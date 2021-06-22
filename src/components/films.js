@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-// import CardPeople from './card/card'
+import CardFilms from './card/CardFilms'
 
 const Films = ({match}) =>{
 
@@ -30,7 +30,7 @@ const Films = ({match}) =>{
             
             {films.map((f, i)=>(
                 <div className="col m-2" key={i}>
-                    {/* <CardFilms people={p}/> */}
+                    <CardFilms films={f}/>
                     <hr />
 
                 </div>

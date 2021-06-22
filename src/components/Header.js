@@ -13,6 +13,9 @@ function Header() {
         </div>
         <div className="col text-right">
           <Link to={"/films"}>Star Wars Movies</Link>
+          <span className="ml-3">
+            <Link to={"/"}>Charecters</Link>
+          </span>
         </div>
 
       </div>
