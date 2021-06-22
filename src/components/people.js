@@ -11,11 +11,11 @@ const Peoples = ({match}) =>{
       },[])
       
       const loadAllPeoples = async () => {
-        const allFetchedCities = await axios.get("https://swapi.dev/api/people")
+        const allFetchedPeoples = await axios.get("https://swapi.dev/api/people")
         .then((res) => {
-          console.log("allFetchedCities", res.data)
+        //   console.log("allFetchedPeoples", res.data)
           setPeople(res.data.results)
-          console.log("match",match)
+        //   console.log("match",match)
         })
         
     }
