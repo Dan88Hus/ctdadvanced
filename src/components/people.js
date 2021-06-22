@@ -21,7 +21,8 @@ const Peoples = ({match}) =>{
     }
 
     return(
-        <>
+        <div className="m-3">
+            <br />
         <div className="text-center">
             <h3 className="mb-3">Peoples</h3>
         </div>
@@ -37,7 +38,7 @@ const Peoples = ({match}) =>{
             ))}
         </div>
         {/* {JSON.stringify(people)} */}
-        </>
+        </div>
     )
 
 }

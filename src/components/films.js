@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 import CardFilms from './card/CardFilms'
 
@@ -13,7 +13,7 @@ const Films = ({match}) =>{
       const loadAllFilms = async () => {
         const allFetchedFilms = await axios.get("https://swapi.dev/api/films")
         .then((res) => {
-          console.log("allFetchedFilms", res.data.results)
+        //   console.log("allFetchedFilms", res.data.results)
           setFilms(res.data.results)
         //   console.log("match",match)
         })
@@ -21,7 +21,9 @@ const Films = ({match}) =>{
     }
 
     return(
-        <>
+        <div className="m-3">
+            <br />
+        
         <div className="text-center">
             <h3 className="mb-3">Films</h3>
         </div>
@@ -36,8 +38,8 @@ const Films = ({match}) =>{
                 </div>
             ))}
         </div> 
-        { JSON.stringify(films, null, 9)}
-        </>
+        {/* { JSON.stringify(films, null, 9)} */}
+        </div>
     )
 
 }
