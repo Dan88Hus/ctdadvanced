@@ -17,11 +17,6 @@ function App() {
       <Route exact path="/planets/:planetId" component={Planets} />
       <Route exact path="/films" component={Films} />
       <Route exact path="/films/characters" component={CardFilmCharacter} />
-
-      
-
-
-
       </Switch>
     </>
   );
